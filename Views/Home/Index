@@ -1,0 +1,10 @@
+<h2>Products</h2>
+
+@if (Model != null && Model.Any())
+{
+    @await Component.InvokeAsync("ProductTable", new { products = Model })
+}
+else
+{
+    <p>No products available.</p>
+}
