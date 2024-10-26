@@ -8,3 +8,7 @@ else
 {
     <p>No products available.</p>
 }
+
+<h2>Current Weather</h2>
+
+@await Component.InvokeAsync("Weather", new { city = "Kyiv" })
